@@ -1,0 +1,175 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+/* Zigzag Container */
+.zigzagcontainer {
+    width: 200px;
+    height: 200px;
+    position: fixed;
+    top: 30px;
+    right: 10px;
+    animation: rotate 5s linear infinite;
+}
+
+/* Zigzag Line */
+.zigzag {
+    width: 80px;
+    height: 80px;
+    background: repeating-linear-gradient(
+        45deg,
+        #00adb5,
+        #00adb5 10px,
+        transparent 10px,
+        transparent 20px
+    );
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.3;
+}
+
+/* Animation for rotation */
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .zigzag {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+/* Middle Part Content */
+.middlepart {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    margin-top: -10vh;
+}
+
+.middleslogan {
+    font-size: 12px;
+    color: #00adb5;
+    font-weight: 900;
+}
+
+.middlecontenth2 {
+    font-size: 50px;
+    font-family: cursive;
+    margin: 10px 0 0 0;
+}
+
+.middlep {
+    font-size: 15px;
+    width: 40vw;
+    line-height: 30px;
+    color: rgba(255, 255, 255, 0.432);
+}
+
+@media screen and (max-width: 768px) {
+    .middleslogan {
+        font-size: 10px;
+        margin-top: -20vh;
+    }
+    .middlecontenth2 {
+        font-size: 30px;
+        margin-top: 20px;
+    }
+    .middlep {
+        width: 60vw;
+        margin-top: 40px;
+    }
+}
+
+/* Button Styling */
+.button {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.btn1 {
+    padding: 10px 20px;
+    background-color: #00949c;
+    font-size: 15px;
+    color: white;
+    font-weight: 400;
+    border: 0;
+    border-radius: 5px;
+}
+
+.btn1link {
+    text-decoration: none;
+    color: white;
+}
+
+.btn2link {
+    text-decoration: none;
+    color: #000;
+}
+
+.btn2 {
+    padding: 10px 35px;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 0;
+    font-size: 15px;
+    color: #000;
+    font-weight: 400;
+}
+
+/* Banner 1 */
+.banner1 {
+    position: absolute;
+    z-index: 100;
+    display: flex;
+  
+   margin-top: 60vh;
+
+   
+}
+
+.bannerimg1 {
+    width: 200px;
+    border-radius: 10px;
+    margin-left: 10vw;
+}
+
+@media screen and (max-width: 768px) {
+    .banner1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+    }
+    .bannerimg1{
+        margin-left: 0vw;
+        margin-top: 30px;
+        width: 260px;
+    }
+}
+
+

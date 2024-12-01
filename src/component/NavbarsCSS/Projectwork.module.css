@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body{
+    background-color: #f0f0f0;
+}
+.projectworkcontainer {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Styling for the Appointment Cards */
+.appointmentcards {
+    position: relative; /* Needed to position the ::after pseudo-element */
+    border: 1px solid transparent; /* Make the border initially transparent */
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    width: 90%;
+    height: 300px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Simple shadow effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+/* Hover effect for the card */
+.appointmentcards:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Add the border-bottom using ::after */
+.appointmentcards::after {
+    content: ''; /* Required to create the pseudo-element */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0; /* Start with no width */
+    height: 3px; /* Height of the border */
+    background-color: rgba(0, 0, 255, 0.616); /* Color of the border */
+    transition: width 0.3s ease; /* Smooth transition for the width */
+}
+
+/* On hover, expand the border */
+.appointmentcards:hover::after {
+    width: 100%; /* Full width of the card */
+}
+
+/* Title styling for each card */
+.appointmentcards .h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: rgba(0, 0, 255, 0.616);
+}
+
+.head{
+    font-size: 40px;
+    font-weight: 800;
+    color: #222831;
+    
+}
+/* Paragraph styling inside the card */
+.appointmentcards .p {
+    font-size: 1rem;
+    color: #555;
+    margin: 10px 0;
+}
+
+/* Container to align the cards in a responsive grid */
+.cardscontainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    /* 3 cards on large screens, adjusts on smaller screens */
+    gap: 20px;
+    justify-items: center;
+}
+
+.btn{
+    all: unset;
+    padding: 10px 30px;
+    background-color: rgba(0, 0, 255, 0.616);
+    box-shadow: 10px 10px 2px rgba(0, 0, 255, 0.219);
+    color: #fff;
+    display: flex;
+    bottom: 0;
+    transition: 0.5s;
+    border-radius: 5px;
+    &:hover{
+        background-color: rgba(0, 0, 255, 0.418);
+        box-shadow: none;
+    }
+}
+
+/* Responsiveness for smaller screens (mobile view) */
+@media (max-width: 768px) {
+    .cardscontainer {
+        grid-template-columns: 1fr;
+        /* Single column layout on small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .appointmentcard {
+        padding: 15px;
+    }
+
+    .appointmentcard h3 {
+        font-size: 1rem;
+    }
+
+    .appointmentcard p {
+        font-size: 0.9rem;
+    }
+}

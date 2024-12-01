@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  .body{
+    display: flex;
+    width: 100%;
+  }
+  .content{
+    width: 50%;
+    display: flex;
+    padding-left: 55px;
+    flex-direction: column;
+    justify-content: center;
+    
+  }
+  .head{
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: 50px;
+    color: #3498db;
+    
+  }
+  .slogan{
+    font-size: 40px;
+    font-weight: 700;
+  }
+  .describe{
+    font-size: 15px;
+    color: #0000007e;
+    font-weight: 500;
+    margin-top: 30px;
+  }
+  .btn{
+    border: 0;
+    outline: 0;
+    padding: 10px 20px;
+    background-color: #3498db;
+    width:30%;
+    border-radius: 5px;
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 20px;
+    transition: .5s;
+    &:hover{
+      background-color: blue;
+    }
+  }
+  .Addcard {
+    margin-top: 90px;
+    width: 50%;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+  }
+
+
+  .cardcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .card {
+    position: relative;
+    width: 250px;
+    height: 240px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+
+  .card .img {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 60px;
+    height: 60px;
+   
+    object-fit: cover;
+  }
+
+  .cardcontent {
+    padding: 20px;
+    padding-top: 80px; /* Adjust based on image position */
+    text-align: center;
+  }
+
+  /* Hover Effect */
+  .card:hover {
+    transform: translateY(-10px);
+  }
+
+  /* Border animation */
+  .card::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 4px;
+    background-color: #3498db;
+    transition: width 0.3s ease;
+  }
+
+  .card:hover::after {
+    width: 100%;
+  }
+
+  .card .h3 {
+    margin-bottom: 10px;
+  }
+
+  .card .p {
+    color: #555;
+  }
+
+  /* Responsive layout */
+  @media (max-width: 768px) {
+    .body{
+        flex-direction: column;
+    }
+    .content{
+        width: 100%;
+    }
+    .Addcard{
+        width: 100%;
+        margin-top: 20px;
+    }
+    
+    .cardcontainer {
+      flex-direction: column;
+      align-items: center;
+    }
+    .head{
+      margin-top: 100px;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 350px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .card {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
