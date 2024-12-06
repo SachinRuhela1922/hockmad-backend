@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar Styles */
+.header {
+    position: fixed;
+    width: 50px;
+    height: 60vh;
+    top: 25vh;
+    left: 0;
+    background-color:#fff;
+    color: black;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+    border-radius: 0px 50px 50px 0px;
+}
+
+.nav {
+    display: flex;
+    
+}
+
+.navlist {
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+    list-style-type: none;
+}
+
+.navitem {
+    margin: 0 20px;
+}
+
+.navlink {
+    cursor: pointer;
+    color: #000;
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.navlink:hover {
+    color: #00adb5;
+    text-decoration: underline;
+    font-size: 1.5rem;
+}
+
+/* Section Styles */
+.sectionhome {
+    height: 100vh; /* Full screen height */
+  
+    
+   
+    background-color: #f4f4f4;
+}
+.sectionabout {
+    height: 100vh; /* Full screen height */
+   
+    background-color: #fff;
+}
+.sectioncontact {
+    height: 160vh; /* Full screen height */
+    
+    background-color: #fdfdfdfd;
+}
+.sectionservice {
+   
+    height: 100vh;
+    background-color: #fff;
+}
+.sectionfaq {
+    height: 100vh; /* Full screen height */
+    display: none;
+    background-color: #fdfdfdfd;
+    
+}
+.sectionadd {
+    height: 102vh; /* Full screen height */
+    
+    background-color: #fff;
+}
+.sectiontraining {
+    height: 110vh; /* Full screen height */
+    
+    background-color: #fdfdfdfd;
+}
+.sectionfooter {
+    height: 50vh; /* Full screen height */
+    
+    background-color: #000;
+}
+@media screen and (max-width:1135px) {
+    .sectionadd{
+        height: 140vh;
+    }
+}
+@media screen and (max-width:768px) {
+    .header{
+        width: 30px;
+        height: 50vh;
+    }
+    .sectionfaq{
+        display: block;
+        height: 80vh;
+    }
+    .sectionadd{
+        height: 180vh;
+    }
+  
+    
+}

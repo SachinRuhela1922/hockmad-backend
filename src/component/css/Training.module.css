@@ -1,0 +1,145 @@
+/* Basic page styling */
+.body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* To stack heading and cards vertically */
+    height: 110vh;
+    text-align: center; /* Centers the text of the heading */
+  }
+  
+  /* Heading styling */
+  .heading {
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    color: #333;
+  }
+  .describe{
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 40px;
+    color: #0000006e;
+  }
+  .slogan{
+    font-size: 12px;
+    font-weight: 600;
+    color: #007bff;
+  }
+  /* Card container to align cards */
+  .cardcontainer {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;  /* Allows wrapping of cards */
+    width: 100%;
+    max-width: 1200px; /* Max width for the cards container */
+  }
+  
+  /* Card styling */
+  .card {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    height: 250px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Simple shadow effect */
+    border-radius: 10px;
+    text-align: center;
+    overflow: hidden; /* Ensures the pseudo-element is contained within the card */
+    transition: transform 0.3s ease-in-out; /* Smooth transition for card lift */
+  }
+  
+  .card .img1{
+    width: 100px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+  }
+  .card .img2{
+    width: 130px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+  }
+  .card .img3{
+    width: 80px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+  }
+  .card .h3 {
+    margin: 0;
+    font-size: 20px;
+    color: #333;
+  }
+  .card .btn{
+    border: 0;
+    border-radius: 5px;
+    color: white;
+   margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    cursor: pointer;
+  }
+  .card .p {
+    font-size: 13px;
+    color: #00000091;
+    font-weight: 400;
+    margin-top: 10px;
+  }
+  .card:hover .h3, .card:hover .p{
+    color: white;
+  }
+  .card:hover .btn{
+    border: 1px solid white;
+  }
+  /* Pseudo-element for the background color effect */
+  .card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background-color: #007bff; /* Blue background */
+    transition: height 0.5s ease; /* Smooth transition for height */
+    z-index: -1; /* Ensures the pseudo-element is behind the card content */
+  }
+  
+  /* Hover effect: expand the background color vertically */
+  .card:hover::before {
+    height: 100%; /* Expands the background color vertically on hover */
+  }
+  
+  /* Hover effect for card */
+  .card:hover {
+    transform: translateY(-20px); /* Card lifts up on hover */
+    
+  }
+  
+  /* Media Query for Medium Screens (tablets) */
+  @media (max-width: 768px) {
+    .cardcontainer {
+      gap: 15px;
+    }
+  
+    .card {
+      width: 45%; /* Two cards per row */
+      height: 250px; /* Adjust card height */
+    }
+  }
+  
+  /* Media Query for Small Screens (mobile phones) */
+  @media (max-width: 480px) {
+    .cardcontainer {
+      gap: 20px;
+    }
+  
+    .card {
+      width: 95%; /* One card per row */
+      
+    }
+  }
+  
