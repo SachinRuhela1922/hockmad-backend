@@ -12,7 +12,7 @@ import Blog from './component/Navbars/Blog.jsx';
 import Started from './component/tempelate/Started.jsx';
 import Html from './component/course/Html.jsx';
 import Css from './component/course/Css.jsx';
-import Javascript from './component/course/javascript.jsx';
+import Javascript from './component/course/Javascript.jsx';
 
 
 function App() {
