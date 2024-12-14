@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.body {
+    width: 100vw;
+    height: 190vh;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+.head {
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.head .subhead {
+    color: blue;
+    font-weight: 700;
+
+}
+
+.intro {
+    font-size: 14px;
+    font-weight: 400;
+    padding: 20px;
+    color: #0000009f;
+    line-height: 20px;
+    width: 70%;
+}
+
+
+
+.form {
+    padding: 20px;
+    width: 50%;
+    height: 90%;
+    background-color: #f4f4f4;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    
+}
+
+.h1 {
+    font-size: 30px;
+    font-weight: 600;
+    
+    text-align: center;
+}
+
+.format {
+    width: 100%;
+
+}
+
+.slogan{
+    width: 50%;
+    text-align: center;
+    font-size: 70px;
+    color: #fff;
+    margin-top: 20px;
+    -webkit-text-stroke: 1.8px #000;
+}
+
+.label {
+    font-size: 20px;
+    
+}
+
+.input {
+    border: 0;
+    outline: 0;
+    width: 100%;
+    height: 40px;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid #0000008c;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    padding: 10px;
+    
+
+    &::placeholder {
+        font-size: 15px;
+        color: rgba(255, 255, 255, 0.466);
+    }
+
+}
+
+.btn {
+    border: 0;
+    outline: 0;
+    padding: 10px 20px;
+    display: flex;
+    background-color: blue;
+    box-shadow: 10px 10px 2px rgba(0, 0, 255, 0.377);
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.5s;
+    &:hover{
+        background-color: rgba(0, 0, 255, 0.377);
+        box-shadow: none;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .slogan{
+        font-size: 40px;
+        width: 90%;
+    }
+    .intro{
+        width: 95%;
+        padding: 20px 5px;
+    }
+    .form{
+        width: 100%;
+        
+    }
+    .body{
+        height: 120vh;
+    }
+    
+}
