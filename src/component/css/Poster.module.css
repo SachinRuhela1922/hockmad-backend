@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+
+.sectionhome {
+    height: 100vh; /* Full screen height */
+  
+    
+   
+    background-color: #f4f4f4;
+}
+.sectionabout {
+    height: 100vh; /* Full screen height */
+   
+    background-color: #fff;
+}
+.sectioncontact {
+    height: 160vh; /* Full screen height */
+    
+    background-color: #fdfdfdfd;
+}
+.sectionservice {
+   
+    height: 100vh;
+    background-color: #fff;
+}
+.sectionfaq {
+    height: 100vh; /* Full screen height */
+    display: none;
+    background-color: #fdfdfdfd;
+    
+}
+.sectionadd {
+    height: 102vh; /* Full screen height */
+    
+    background-color: #fff;
+}
+.sectiontraining {
+    height: 110vh; /* Full screen height */
+    
+    background-color: #fdfdfdfd;
+}
+.sectionfooter {
+    height: 50vh; /* Full screen height */
+    
+    background-color: #000;
+}
+@media screen and (max-width:1135px) {
+    .sectionadd{
+        height: 140vh;
+    }
+}
+@media screen and (max-width:768px) {
+    .header{
+        width: 30px;
+        height: 50vh;
+    }
+    .sectionfaq{
+        display: block;
+        height: 40vh;
+      
+    }
+    .sectionservice{
+        height: 60vh;
+    }
+    .sectionabout{
+        display: none;
+    }
+    .sectioncontact{
+        height: 180vh;
+    }
+    .sectionadd{
+        height: 180vh;
+    }
+    .sectionfooter{
+        height: 30vh;
+    }
+  
+    
+}
+
+/* Loader container for centering the loader */
+.loaderContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full-screen height */
+    background-color: #f9f9f9; /* Light background */
+}
+
+/* Loader (spinner) styles */
+.loader {
+    border: 8px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 8px solid #3498db;
+    width: 60px;
+    height: 60px;
+    animation: spin 1s linear infinite;
+}
+
+/* Keyframes for the spinning animation */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Loading text styles */
+.loadingText {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    color: #555;
+}

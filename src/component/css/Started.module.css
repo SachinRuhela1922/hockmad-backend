@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body{
+    width: 100%;
+    height: 100%;
+}
+
+
+.land{
+    align-content: center;
+    display: flex;
+    
+    width: 100vw;
+    height: 50vh;
+
+}
+.content{
+    width: 55vw;
+    height: 50vh;
+}
+.image{
+    width: 45vw;
+    height: 50vh;
+}
+.image .image1{
+    width: 100%;
+    margin-top: 20px;
+}
