@@ -12,7 +12,7 @@ const Started = () => {
             <div className={StartCSS.land}>
                 <div className={StartCSS.content}>
                     <h1>hello</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quia, eos odio nam reiciendis, a inventore eligendi possimus officiis, harum illo quae ex praesentium ut similique soluta quisquam alias sit.</p>
+                    <p>welcome to hockmad, click on Home page</p>
 
                 </div>
                 <div className={StartCSS.image}>
