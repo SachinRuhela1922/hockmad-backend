@@ -6,7 +6,7 @@ const Footer = () => {
     return (
         <div className={FooterCSS.body}>
             <div className={FooterCSS.content}>
-                At YourCompanyName, we are dedicated to providing exceptional services in web development, training, and skill enhancement. 
+                At Hockmad, we are dedicated to providing exceptional services in web development, training, and skill enhancement. 
             </div>
             <div className={FooterCSS.links}>
            <h1 className={FooterCSS.head}>Useful Links</h1>
@@ -17,7 +17,7 @@ const Footer = () => {
             </div>
             <div className={FooterCSS.contact}>
                 <h1 className={FooterCSS.head}>Contact Us</h1>
-                <h3><i class='bx bx-current-location' ></i>  Ghazibad, India</h3>
+                <h3><i class='bx bx-current-location' ></i> No.435 - Partpur road pilkhuwa dehat distt: Hapur,Uttar Pradesh India</h3>
                 <h3><i class='bx bxs-phone' ></i>  +91 8475843925</h3>
                 <h3><i class='bx bx-envelope' ></i>  hockmad1922@gmail.com</h3>
 
