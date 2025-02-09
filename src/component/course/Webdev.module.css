@@ -1,0 +1,305 @@
+/* Onlybackend.module.css */
+
+.body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .poster {
+    background: #4e73df;
+    color: white;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .card {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+  }
+  
+  .content {
+    text-align: center;
+  }
+  
+  .banner {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .title {
+    font-size: 28px;
+    margin-top: 20px;
+    color: #333;
+  }
+  
+  .price {
+    margin-top: 15px;
+  }
+  
+  .p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #27ae60;
+  }
+  
+  .span {
+    color: #e74c3c;
+    font-size: 16px;
+    text-decoration: line-through;
+    margin-left: 10px;
+  }
+  
+  .payNowButton {
+    background-color: #4e73df;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .payNowButton:hover {
+    background-color: #2e59d9;
+  }
+  
+  .mobileInput {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .courseDescription {
+    background-color: #fff;
+    padding: 30px;
+    margin-top: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .courseDescription .h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .topics h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .topics ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  .topics li {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  footer {
+    margin-top: 40px;
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: white;
+  }
+  
+  footer p {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  .loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 80px;
+    border: 8px solid #f3f3f3; /* Light gray background */
+    border-top: 8px solid #3498db; /* Blue color for the spinning part */
+    border-radius: 50%;
+    animation: spin 1.5s linear infinite, colorChange 3s linear infinite;
+  }
+  
+  /* Spinning animation */
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  /* Color changing animation */
+  @keyframes colorChange {
+    0% { border-top-color: #3498db; }
+    25% { border-top-color: #e74c3c; }
+    50% { border-top-color: #f39c12; }
+    75% { border-top-color: #2ecc71; }
+    100% { border-top-color: #3498db; }
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media screen and (max-width: 768px) {
+    .h1 {
+      font-size: 28px;
+    }
+  
+    .title {
+      font-size: 24px;
+    }
+  
+    .price .p {
+      font-size: 20px;
+    }
+  
+    .price .span {
+      font-size: 14px;
+    }
+  
+    .payNowButton {
+      padding: 10px 15px;
+      font-size: 14px;
+    }
+  
+    .banner {
+      height: 200px;
+    }
+  
+    .container {
+      padding: 20px;
+    }
+  
+    .mobileInput {
+      font-size: 14px;
+    }
+  
+    .courseDescription h3 {
+      font-size: 24px;
+    }
+  
+    .topics h4 {
+      font-size: 18px;
+    }
+  
+    .topics li {
+      font-size: 14px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .h1 {
+      font-size: 24px;
+    }
+  
+    .title {
+      font-size: 22px;
+    }
+  
+    .price .p {
+      font-size: 18px;
+    }
+  
+    .payNowButton {
+      padding: 10px;
+      font-size: 12px;
+    }
+  
+    .mobileInput {
+      font-size: 14px;
+    }
+  
+    .banner {
+      height: 180px;
+    }
+  
+    .courseDescription h3 {
+      font-size: 20px;
+    }
+  
+    .topics h4 {
+      font-size: 16px;
+    }
+  
+    .topics li {
+      font-size: 12px;
+    }
+  
+    footer p {
+      font-size: 12px;
+    }
+  }
+  
+
+
+  .passwordCriteria {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    animation: fadeIn 1s ease-out;
+  }
+  
+  .passwordCriteria h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .passwordCriteria ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .passwordCriteria li {
+    font-size: 1rem;
+    margin: 8px 0;
+    opacity: 0.6;
+    transition: all 0.3s ease;
+  }
+  
+  .passwordCriteria .valid {
+    color: green;
+    opacity: 1;
+  }
+  
+  .passwordCriteria li:hover {
+    transform: scale(1.05);
+    color: #007bff;
+    transition: all 0.3s ease;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
